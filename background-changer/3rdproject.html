@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Background Changer </title>
+
+    <style>
+         
+         H1{
+        
+            text-align: center;
+
+         }
+         #h1{
+            text-decoration: underline;
+            text-align: center;
+         }
+         img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+         }
+         
+         p{
+            font-size: 25px;
+            font-style: italic;
+            color: black;
+           text-align: justify;
+         }
+         .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+         #red{
+              background-color: violet;
+
+         }
+         #yellow{
+                 background-color:yellow;
+         }
+         #aqua{
+                background-color: aqua;
+         }
+         #black{
+                background-color: black;
+         }
+         #div{
+            text-align: right;
+         }
+    </style>
+</head>
+<body>
+    <div id="div">
+     <span class="btn" id="red" onclick="changeBG('#ce9aff')"></span>
+     <span class="btn" id="yellow" onclick="changeBG('#ffff00')"></span>
+     <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+     <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+
+    </div>
+    <H1> Background Changer</H1>
+    <h1 class="text"> About Friends </h1>
+    <img src="https://thumbs.dreamstime.com/b/friends-enjoying-party-throwing-confetti-group-having-fun-rooftop-84819602.jpg" alt="">
+    <p class="text"> 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore ducimus 
+        nesciunt voluptatum, officiis sunt et exercitationem enim ad quia accusantium 
+        distinctio quaerat commodi, sed quo perspiciatis nulla corporis. Aspernatur.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore ducimus 
+        nesciunt voluptatum, officiis sunt et exercitationem enim ad quia accusantium 
+        distinctio quaerat commodi, sed quo perspiciatis nulla corporis. Aspernatur.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore ducimus 
+        nesciunt voluptatum, officiis sunt et exercitationem enim ad quia accusantium 
+        distinctio quaerat commodi, sed quo perspiciatis nulla corporis. Aspernatur.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore ducimus 
+        nesciunt voluptatum, officiis sunt et exercitationem enim ad quia accusantium 
+        distinctio quaerat commodi, sed quo perspiciatis nulla corporis. Aspernatur.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore ducimus 
+        nesciunt voluptatum, officiis sunt et exercitationem enim ad quia accusantium 
+        distinctio quaerat commodi, sed quo perspiciatis nulla corporis. Aspernatur.
+    
+    </p>
+    <script>
+      function changeBG(color){
+      document.body.style.backgroundColor = color;
+      let text = document.getElementsByClassName("text");
+      if(color == "#000000"){
+        for(let elm of text){
+           elm.style.color = "white";
+        }
+      }else{
+         for(let elm of text){
+           elm.style.color = "black";
+        }
+      }
+      }
+    </script>
+</body>
+</html>
