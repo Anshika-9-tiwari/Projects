@@ -1,0 +1,88 @@
+
+#container{
+       background-color: aqua;
+       width: 70wh;
+       height: 500px;
+      
+}
+.div{
+    background-color: burlywood;
+     padding: 1px;
+     margin: 1px;
+     
+}
+.nav{
+    background-color:hsl(0, 9%, 11%);
+    padding: 2px;
+    margin: 2px;
+    justify-content: space-evenly;
+    display: flex;
+    text-decoration: none;
+}
+.nav ul{
+    display:inline;
+   flex-direction: row;
+    font-size: 25px;
+    text-decoration:none;
+    font-weight: bold;
+    color: white;
+    }
+   #input{
+    font-size:20px;
+    border-radius: 2px;
+    height: 10px;
+    padding-left: 0;
+    padding-top: 5px;
+    margin-top: 25px;
+   }
+  ul a{
+    color: white;
+    text-decoration: none;
+    
+   }
+.boxes{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+   .div1{
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    width: 300px;
+    height: 280px;
+   }
+   .div2{
+    width: 300px;
+    height: 280px;
+    justify-content: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    align-items: center;
+     }
+     
+.form input{
+    width: 300px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+.btn{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+
+}
+.footer{
+    background-color: #111010;
+    color: white;
+    height: 40px;
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
